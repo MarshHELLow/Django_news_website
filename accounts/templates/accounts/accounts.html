@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+  <div class="feature">
+    <h1>Управление учетной записью</h1>
+    <p>Здесь вы можете управлять настройками своей учетной записи и просматривать информацию своего профиля.</p>
+    <a href="{% url 'home' %}" class="btn btn-warning">
+      <i class="fa fa-arrow-left"></i> Назад
+    </a>
+    <a href="#" class="btn btn-secondary">Регистрация</a>
+    <a href="#" class="btn btn-secondary">Авторизация</a>
+    <a href="#" class="btn btn-secondary">Забыли пароль</a>
+  </div>
+{% endblock %}

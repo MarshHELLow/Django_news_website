@@ -24,8 +24,12 @@
 
             <span id="error-message">{{ error }}</span><br>
 
-            <a href="{% url 'news-detail' article.id %}" class="btn btn-warning">Назад</a>
-            <button class="btn btn-success" type="submit">Сохранить</button>
+            <a href="{% url 'news-detail' article.id %}" class="btn btn-warning">
+                <i class="fa fa-arrow-left"></i> Назад
+            </a>
+            <button class="btn btn-success" type="submit">
+                <i class="fa fa-check-square"></i> Сохранить
+            </button>
         </form>
     </div>
 

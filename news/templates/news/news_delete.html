@@ -8,8 +8,12 @@
         <form method="post">
             {% csrf_token %}
             <p>Вы действительно хотите удалить статью "{{ article.title }}" добавленную {{ article.date|date:"d E Y" }}?</p>
-            <a href="{% url 'news-detail' article.id %}" class="btn btn-warning">Назад</a>
-            <button class="btn btn-danger" type="submit">Удалить статью</button>
+            <a href="{% url 'news-detail' article.id %}" class="btn btn-warning">
+                <i class="fa fa-arrow-left"></i> Назад
+            </a>
+            <button class="btn btn-danger" type="submit">
+                <i class="fa fa-trash"></i> Удалить статью
+            </button>
         </form>
     </div>
 {% endblock %}

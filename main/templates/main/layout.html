@@ -24,12 +24,17 @@
             <li><a href="{% url 'about' %}"><i class="fa-solid fa-address-card"></i> Про нас</a></li>
             <li><a href="{% url 'news_home' %}"><i class="fa-solid fa-tv"></i> Новости</a></li>
             <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-paper-plane"></i> Контакты</a></li>
+
             <li class="qr-code"> <!-- QR-код -->
                 <img src="{% static 'main/img/qr-code.svg' %}" alt="qr-code">
             </li>
-            <li class="button-add"> <!-- Кнопка "Добавить запись" -->
-                <a href="{% url 'news-create' %}">
-                    <button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить запись</button>
+
+            <li class="button-add">
+                <a href="{% url 'accounts:accounts' %}" class="btn btn-info">
+                    <i class="fa fa-id-card"></i> Учетная запись
+                </a>
+                <a href="{% url 'news-create' %}" class="btn btn-info">
+                    <i class="fas fa-plus-circle"></i> Добавить запись
                 </a>
             </li>
         </ul>

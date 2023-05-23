@@ -7,8 +7,14 @@
         <h1>{{ article.title }}</h1>
         <span class="date">{{ article.date|date:"d E Y" }}</span>
         <p>{{ article.full_text }}</p>
-        <a href="{% url 'news_home' %}" class="btn btn-warning">Назад</a>
-        <a href="{% url 'news-update' article.id %}" class="btn btn-info">Редактировать</a>
-        <a href="{% url 'news-delete' article.id %}" class="btn btn-danger">Удалить</a>
+        <a href="{% url 'news_home' %}" class="btn btn-warning">
+            <i class="fa fa-arrow-left"></i> Назад
+        </a>
+        <a href="{% url 'news-update' article.id %}" class="btn btn-info">
+            <i class="fa fa-pencil"></i> Редактировать
+        </a>
+        <a href="{% url 'news-delete' article.id %}" class="btn btn-danger">
+            <i class="fa fa-trash"></i> Удалить
+        </a>
     </div>
 {% endblock %}

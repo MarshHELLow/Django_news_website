@@ -29,12 +29,12 @@ aside .logo {
 
 
 
-li.qr-code {
+li.qr-code { /* QR-код */
   background-color: white;
   padding: 5px;
   display: inline-block;
   position: fixed;
-  bottom: calc(50px + 8%);
+  bottom: calc(50px + 13%);
   left: 10%;
   transform: translateX(-50%);
 }
@@ -45,6 +45,7 @@ li.qr-code img {
   width: 150px;
   height: auto;
 }
+
 
 aside h3 {
   margin-top: 50px; /* Отступ сверху для заголовка */

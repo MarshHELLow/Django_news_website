@@ -3,8 +3,17 @@
   bottom: 50px; /* Расстояние от нижнего края экрана */
   left: 10%; /* Расположение элемента по горизонтали в центре экрана */
   transform: translateX(-50%); /* Центрирование элемента относительно его ширины */
+  display: flex;
+  flex-direction: column;
 }
 
+.button-add a {
+  transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+.button-add a:hover {
+  transform: scale(1.05); /* Увеличение размера при наведении */
+}
 
 
 .news-block .btn { /* Кнопка "Подробно" в новостном блоке */
@@ -21,6 +30,8 @@
 .news-block .btn:hover {
   background-color: #ff9800;
   color: black;
+  transition: transform 0.3s; /* Плавный переход при наведении */
+  transform: scale(1.05); /* Увеличение размера при наведении */
 }
 
 
@@ -55,7 +66,14 @@
     background-color: #ff0000;
 }
 
+.btn-secondary { /* Кнопка на странице "Аккаунт" */
+    background-color: #909090;
+}
 
+.btn-secondary:hover {
+    background-color: #8a7f8e;
+    color: black;
+}
 
 .btn-warning:hover {
     background-color: #ffaa00;
