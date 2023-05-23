@@ -19,9 +19,6 @@
             <label for="id_date">Дата:</label>
             <input type="date" id="id_date" name="date"><br>
 
-            <label for="id_time">Время:</label>
-            <input type="time" id="id_time" name="time"><br>
-
             <span id="error-message">{{ error }}</span><br>
 
             <a href="{% url 'news_home' %}" class="btn btn-warning">
@@ -33,12 +30,4 @@
         </form>
     </div>
 
-    <script>
-        // Установка текущей даты и времени по умолчанию
-        var currentDate = new Date();
-        var currentDateString = currentDate.toISOString().split('T')[0];
-        var currentTimeString = currentDate.toTimeString().split(' ')[0];
-        document.getElementById("id_date").value = currentDateString;
-        document.getElementById("id_time").value = currentTimeString.substring(0, 5) + ":00";
-    </script>
 {% endblock %}

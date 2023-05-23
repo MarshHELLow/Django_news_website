@@ -19,9 +19,6 @@
             <label for="id_date">Дата:</label>
             <input type="date" id="id_date" name="date" value="{{ article.date }}"><br>
 
-            <label for="id_time">Время:</label>
-            <input type="time" id="id_time" name="time" value="{{ article.time }}"><br>
-
             <span id="error-message">{{ error }}</span><br>
 
             <a href="{% url 'news-detail' article.id %}" class="btn btn-warning">
