@@ -27,6 +27,8 @@ aside .logo {
   top: -10px;
 }
 
+
+
 li.qr-code {
   background-color: white;
   padding: 5px;
@@ -66,6 +68,8 @@ aside ul li a:hover {
   transform: scale(1.05);
 }
 
+
+
 /* Основная часть страницы */
 main {
   float: left;
@@ -96,5 +100,5 @@ form {
 }
 
 .date {
-  font-weight: bold;  /* Например, сделать дату жирным шрифтом */
+  font-weight: bold;  /* Дата жирным шрифтом */
 }

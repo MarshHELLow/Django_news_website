@@ -7,7 +7,25 @@
 
 
 
-.btn {
+.news-block .btn { /* Кнопка "Подробно" в новостном блоке */
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #9dcc8b;
+  border: none;
+  border-radius: 3px;
+}
+
+.news-block .btn:hover {
+  background-color: #ff9800;
+  color: black;
+}
+
+
+
+.btn { /* Общие настройки для кнопок */
     display: inline-block;
     padding: 5px 10px;
     margin-right: 10px;
@@ -16,21 +34,40 @@
     background-color: #007bff;
     border: none;
     border-radius: 3px;
+    transition: background-color 0.3s ease;
 }
 
-.btn-warning {
+.btn:hover {
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
+
+.btn-warning { /* Кнопка "Назад" */
     background-color: #ffc107;
 }
 
-.btn-success {
+.btn-success { /* Кнопка "Сохранить" */
     background-color: #28a745;
 }
 
-.btn-danger {
+.btn-danger { /* Кнопка "Удалить" */
     background-color: #ff0000;
 }
 
+
+
+.btn-warning:hover {
+    background-color: #ffaa00;
+}
+
+.btn-success:hover {
+    background-color: #1e7f36;
+}
+
 .btn-danger:hover {
-    background-color: #ff6800;
+    background-color: #cc0000;
     color: black;
 }
+
+

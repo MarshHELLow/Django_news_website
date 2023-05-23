@@ -19,18 +19,5 @@
   margin-bottom: 20px;
 }
 
-.news-block .btn {
-  display: inline-block;
-  padding: 5px 10px;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #ffc107;
-  border: none;
-  border-radius: 3px;
-}
 
-.news-block .btn:hover {
-  background-color: #ff9800;
-}
 
