@@ -9,6 +9,7 @@
         {% for el in news %}
             <div class="news-block">
                 <h3>{{ el.title }}</h3>
+                <span class="date">{{ el.date|date:"d E Y" }} г.</span>
                 <p>{{ el.anons }}</p>
                 <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Подробно</a>
             </div>

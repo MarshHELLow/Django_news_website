@@ -94,3 +94,7 @@ form {
   width: 500px;
   margin-top: 50px;
 }
+
+.date {
+  font-weight: bold;  /* Например, сделать дату жирным шрифтом */
+}

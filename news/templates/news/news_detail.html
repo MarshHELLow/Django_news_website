@@ -5,7 +5,7 @@
 {% block content %}
     <div class="feature">
         <h1>{{ article.title }}</h1>
-        <p>{{ article.date }}</p>
+        <span class="date">{{ article.date|date:"d E Y" }}</span>
         <p>{{ article.full_text }}</p>
         <a href="{% url 'news_home' %}" class="btn btn-warning">Назад</a>
         <a href="{% url 'news-update' article.id %}" class="btn btn-info">Редактировать</a>
