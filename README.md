@@ -5,8 +5,9 @@ On the navigation bar, you can switch between different tabs - "Home", "About Us
 
 The "News" tab displays records from the database, which can be viewed in more detail by clicking the "Details" button. You can also edit or delete them in the detailed view.
 
-There is also an "Add Record" button on the sidebar that allows you to add a record to the database using the user interface.
+The sidebar has an "Add Entry" button that allows you to add an entry to the database using the user interface, and an "Account" button that takes you to the account management page.
 
 The project has two applications:
 1. "main" - to display the sidebar and navigation and informative tabs with static information.
 2. "news" - for working with the "News" tab and the database.
+3. "accounts" - the section is under development
