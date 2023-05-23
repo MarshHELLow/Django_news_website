@@ -1,0 +1,35 @@
+.news-block {
+  width: 80%; /* Используем полную ширину блока */
+  margin: 0 auto; /* Центрируем блок по горизонтали */
+  padding: 20px;
+  text-align: left;
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.news-block h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.news-block p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.news-block .btn {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffc107;
+  border: none;
+  border-radius: 3px;
+}
+
+.news-block .btn:hover {
+  background-color: #ff9800;
+}

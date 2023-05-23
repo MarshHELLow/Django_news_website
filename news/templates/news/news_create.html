@@ -1,0 +1,40 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Форма по добавлению статьи{% endblock %}
+
+{% block content %}
+    <div class="add_news">
+        <h1>Форма по добавлению статьи</h1>
+        <form id="article-form" method="post">
+            {% csrf_token %}
+            <label for="id_title">Заголовок:</label>
+            <input type="text" id="id_title" name="title"><br>
+
+            <label for="id_anons">Анонс:</label>
+            <textarea id="id_anons" name="anons"></textarea><br>
+
+            <label for="id_full_text">Полный текст:</label>
+            <textarea id="id_full_text" name="full_text"></textarea><br>
+
+            <label for="id_date">Дата:</label>
+            <input type="date" id="id_date" name="date"><br>
+
+            <label for="id_time">Время:</label>
+            <input type="time" id="id_time" name="time"><br>
+
+            <span id="error-message">{{ error }}</span><br>
+
+            <a href="{% url 'news_home' %}" class="btn btn-warning">Назад</a>
+            <button class="btn btn-success" type="submit">Добавить статью</button>
+        </form>
+    </div>
+
+    <script>
+        // Установка текущей даты и времени по умолчанию
+        var currentDate = new Date();
+        var currentDateString = currentDate.toISOString().split('T')[0];
+        var currentTimeString = currentDate.toTimeString().split(' ')[0];
+        document.getElementById("id_date").value = currentDateString;
+        document.getElementById("id_time").value = currentTimeString.substring(0, 5) + ":00";
+    </script>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Редактировать статью{% endblock %}
+
+{% block content %}
+    <div class="add_news">
+        <h1>Редактировать статью "{{ article.title }}"</h1>
+        <form id="article-form" method="post">
+            {% csrf_token %}
+            <label for="id_title">Заголовок:</label>
+            <input type="text" id="id_title" name="title" value="{{ article.title }}"><br>
+
+            <label for="id_anons">Анонс:</label>
+            <textarea id="id_anons" name="anons">{{ article.anons }}</textarea><br>
+
+            <label for="id_full_text">Полный текст:</label>
+            <textarea id="id_full_text" name="full_text">{{ article.full_text }}</textarea><br>
+
+            <label for="id_date">Дата:</label>
+            <input type="date" id="id_date" name="date" value="{{ article.date }}"><br>
+
+            <label for="id_time">Время:</label>
+            <input type="time" id="id_time" name="time" value="{{ article.time }}"><br>
+
+            <span id="error-message">{{ error }}</span><br>
+
+            <a href="{% url 'news-detail' article.id %}" class="btn btn-warning">Назад</a>
+            <button class="btn btn-success" type="submit">Сохранить</button>
+        </form>
+    </div>
+
+    <script>
+        // Установка текущей даты и времени по умолчанию
+        var currentDate = new Date();
+        var currentDateString = currentDate.toISOString().split('T')[0];
+        var currentTimeString = currentDate.toTimeString().split(' ')[0];
+        document.getElementById("id_date").value = currentDateString;
+        document.getElementById("id_time").value = currentTimeString.substring(0, 5) + ":00";
+    </script>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/add_news.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/news_block.css' %}">
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/logo.svg' %}" alt="Лого"> <!-- Логотип -->
+        <span class="logo">Fsociety </span>
+        <h3>Навигация</h3>
+        <ul>
+            <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Главная страница</a></li>
+            <li><a href="{% url 'about' %}"><i class="fa-solid fa-address-card"></i> Про нас</a></li>
+            <li><a href="{% url 'news_home' %}"><i class="fa-solid fa-tv"></i> Новости</a></li>
+            <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-paper-plane"></i> Контакты</a></li>
+            <li class="qr-code"> <!-- QR-код -->
+                <img src="{% static 'main/img/qr-code.svg' %}" alt="qr-code">
+            </li>
+            <li class="button-add"> <!-- Кнопка "Добавить запись" -->
+                <a href="{% url 'news-create' %}">
+                    <button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить запись</button>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

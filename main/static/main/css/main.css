@@ -1,0 +1,96 @@
+/* Общий фон страницы */
+body {
+  background: #2c3337;
+}
+
+/* Боковая панель */
+aside {
+  float: left;
+  background: #131a1f;
+  width: 20%;
+  padding: 2.5%;
+  height: 100vh;
+  color: #fff;
+  border-right: 5px solid #444b52;
+}
+
+aside img {
+  width: 80px;
+  float: left;
+}
+
+aside .logo {
+  font-size: 40px;
+  margin-left: 10px;
+  font-weight: bold;
+  position: relative;
+  top: -10px;
+}
+
+li.qr-code {
+  background-color: white;
+  padding: 5px;
+  display: inline-block;
+  position: fixed;
+  bottom: calc(50px + 8%);
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+li.qr-code img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+}
+
+aside h3 {
+  margin-top: 50px; /* Отступ сверху для заголовка */
+  font-size: 28px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li a {
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+  transition: transform .6s ease;
+  text-decoration: none !important;
+}
+
+aside ul li a:hover {
+  color: #eb5959;
+  transform: scale(1.05);
+}
+
+/* Основная часть страницы */
+main {
+  float: left;
+  width: 80%;
+  padding: 2.5%;
+}
+
+main .feature {
+  color: #fff;
+  margin-top: 50px;
+  text-align: center;
+}
+
+main .feature h1 {
+  font-size: 50px;
+  margin-bottom: 20px; /* Отступ снизу для заголовка */
+}
+
+.main-content {
+  margin-top: 20px; /* Отступ сверху для новостного блока */
+}
+
+
+form {
+  margin-left: 32%; /* Отступ слева для формы */
+  width: 500px;
+  margin-top: 50px;
+}

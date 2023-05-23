@@ -1,0 +1,36 @@
+.button-add { /* Кнопка "Добавить статью" */
+  position: fixed; /* Фиксация позиции кнопки на экране */
+  bottom: 50px; /* Расстояние от нижнего края экрана */
+  left: 10%; /* Расположение элемента по горизонтали в центре экрана */
+  transform: translateX(-50%); /* Центрирование элемента относительно его ширины */
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #ff0000;
+}
+
+.btn-danger:hover {
+    background-color: #ff6800;
+    color: black;
+}

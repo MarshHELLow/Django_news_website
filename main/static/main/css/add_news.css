@@ -1,0 +1,46 @@
+main .add_news {
+  margin-bottom: 20px;
+  color: #fff;
+  margin-top: 50px; /* Отступ от верхнего края */
+  text-align: center;
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+main .add_news h1 {
+  font-size: 50px;
+  margin-bottom: 10px; /* Отступ от нижнего края */
+}
+
+main .add_news p {
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+form {
+  text-align: center;
+  clear: both;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 500px;
+  height: 100px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+span#error-message {
+  color: red;
+}
+
+main .add_news,
+form {
+  margin-left: auto;
+  margin-right: auto;
+}
